@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Evs(models.Model):
+class Ev(models.Model):
     make = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
     effieciency = models.CharField(max_length=30)
