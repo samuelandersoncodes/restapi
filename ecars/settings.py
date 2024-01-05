@@ -32,6 +32,10 @@ ALLOWED_HOSTS = [
     '8000-samuelandersonc-restapi-0gr797wxpql.ws-eu107.gitpod.io'
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://*8000-samuelandersonc-restapi-0gr797wxpql.ws-eu107.gitpod.io'
+]
+
 
 # Application definition
 
