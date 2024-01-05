@@ -26,7 +26,9 @@ DATABASE_URL = os.getenv('DATABASE_URL')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '8000-samuelandersonc-restapi-0gr797wxpql.ws-eu107.gitpod.io'
+]
 
 
 # Application definition
