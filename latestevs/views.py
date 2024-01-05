@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from . import views
 
-# Create your views here.
+
+def evapi(request):
+    #evapi view
+    def get(self, request):
+        return render(request, 'evapi.html')
