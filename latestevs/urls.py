@@ -1,5 +1,6 @@
 from django.urls import path
+from . import views
 
 urlpatterns = [
-    path("", views.EvApi.as_view(), name="evapi"),
+    path('', views.evapi, name='evapi'),
 ]
