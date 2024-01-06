@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from . import views
+from .serializers import EvSerializer
 
 
 def evapi(request):
