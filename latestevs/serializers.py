@@ -8,6 +8,8 @@ class EvSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "make",
+            "average_price",
+            "seats",
             "type",
             "efficiency",
             "top_speed",
