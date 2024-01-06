@@ -4,7 +4,7 @@ from django.db import models
 class Ev(models.Model):
     make = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
-    average_price = CharField(max_length=20)
+    average_price = models.CharField(max_length=20)
     seats = models.IntegerField(
         default=2,
         choices=[
