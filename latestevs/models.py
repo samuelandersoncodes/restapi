@@ -6,15 +6,14 @@ class Ev(models.Model):
     type = models.CharField(max_length=100)
     average_price = models.CharField(max_length=20)
     seats = models.IntegerField(
-        default=5,
+        default=(5, "five"),
         choices=[
             (2, "Two"),
-            (4, "Four"),
-            (5, "five"),
-            (6, "six"),
-            (7, "seven"),
-            (8, "eight"),
-            (9, "nine"),
+            (5, "Five"),
+            (6, "Six"),
+            (7, "Seven"),
+            (8, "Eight"),
+            (9, "Nine"),
         ],
     )
     efficiency = models.CharField(max_length=30)
