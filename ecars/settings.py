@@ -29,7 +29,7 @@ DATABASE_URL = os.getenv('DATABASE_URL')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-samuelandersonc-restapi-0gr797wxpql.ws-eu107.gitpod.io'
+    '8000-samuelandersonc-restapi-gqrauxuyzwi.ws-eu107.gitpod.io'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
