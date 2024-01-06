@@ -33,7 +33,7 @@ ALLOWED_HOSTS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://*8000-samuelandersonc-restapi-0gr797wxpql.ws-eu107.gitpod.io'
+    'https://*8000-samuelandersonc-restapi-gqrauxuyzwi.ws-eu107.gitpod.io'
 ]
 
 
