@@ -6,4 +6,6 @@ from .serializers import EvSerializer
 
 def evapi(request):
     # evapi view
-    return render(request, "evapi.html")
+    evs = Ev.objects.all()
+    serializer = EvSerializer(evs, many=True)
+    return JsonResponse(serializer.data)
