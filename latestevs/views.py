@@ -8,4 +8,4 @@ def evapi(request):
     # evapi view
     evs = Ev.objects.all()
     serializer = EvSerializer(evs, many=True)
-    return JsonResponse(serializer.data, safe=False)
+    return JsonResponse({"evs": serializer.data}, safe=False)
