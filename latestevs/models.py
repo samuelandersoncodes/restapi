@@ -9,3 +9,6 @@ class Ev(models.Model):
     battery_range = models.CharField(max_length=30)
     fast_charge = models.CharField(max_length=20)
     released_date = models.DateField()
+
+    def __str__(self):
+        return self.make + " " + self.type
