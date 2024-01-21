@@ -11,7 +11,7 @@ def evapi(request):
     if request.method == "GET":
         evs = Ev.objects.all()
         serializer = EvSerializer(evs, many=True)
-        return JsonResponse({"evs": serializer.data}, safe=False)
+        return Response(serializer.data)
     if request.method == "POST":
         serializer = EvSerializer(data=request.data)
         if serializer.is_valid():
