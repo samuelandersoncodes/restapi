@@ -8,7 +8,7 @@ from rest_framework import status
 
 
 @api_view(["GET", "POST"])
-def evapi(request):
+def evapi(request, format=None):
     # evapi view
     if request.method == "GET":
         evs = Ev.objects.all()
