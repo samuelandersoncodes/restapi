@@ -17,3 +17,13 @@ def evapi(request):
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
+@api_view(["GET", "PUT", "DELETE"])
+def ev_details(request, id):
+    # ev detail view
+    try:
+        evs = Ev.objects.get(pk=id)
+    except Ev.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+    
