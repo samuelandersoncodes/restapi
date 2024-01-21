@@ -22,7 +22,7 @@ def evapi(request, format=None):
 
 
 @api_view(["GET", "PUT", "DELETE"])
-def ev_details(request, id):
+def ev_details(request, id, format=None):
     # ev detail view
     try:
         evs = Ev.objects.get(pk=id)
