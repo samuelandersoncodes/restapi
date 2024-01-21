@@ -26,4 +26,7 @@ def ev_details(request, id):
         evs = Ev.objects.get(pk=id)
     except Ev.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
+    if request.method == "GET":
+        serializer = EvSerializer(evs)
+        return Response(serializer.data)
     
